@@ -2,26 +2,54 @@
 
 body {
 	background-color: #dcf9e9;
-	font-family: "Helvetica", sans-serif;
-
 }
 p {
+	font-family: "Helvetica", sans-serif;
 	color: #000;
-	font-family: "Calibri", sans-serif;
 	font-size: 10pt;
 }
-h1 {
+h1,
+h2,
+h3 {
 	font-size: 30pt;
+	font-family: "Calibri";
 	color: #31577a;
 }
 h2 {
 	font-size: 22pt;
-	color: #3ea1cc;
+	color: #501a69;
 }
-.ashley {
-	height: 300px;
-	width: 200px;
+h3 {
+	font-size: 16pt;
+	color: #732999;
 }
 header {
 	text-align: center;
+	margin-left: 50px;
+	margin-top: 25px;
+	width: 400px;
+	float: left;
+	background-color: #56edd0;
+	padding: 20px;
+	border-radius: 15px;
+}
+header img {
+	height: 300px;
+	width: 200px;
+	clear: both;
+	position: relative;
+}
+section {
+	float: left;
+	width: 700px;
+	margin-top: 25px;
+	margin-left: 50px;
+	background-color: #ed9ff8;
+	padding: 20px;
+	border-radius: 15px;
+}
+
+section div p {
+	color: #fff;
+	font-size: 10pt;
 }
