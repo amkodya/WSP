@@ -22,6 +22,7 @@ h2 {
 h3 {
 	font-size: 16pt;
 	color: #732999;
+	text-decoration: uppercase;
 }
 header {
 	text-align: center;
@@ -30,7 +31,7 @@ header {
 	width: 400px;
 	float: left;
 	background-color: #56edd0;
-	padding: 20px;
+	padding: 10px 20px 10px 20px;
 	border-radius: 15px;
 }
 header img {
