@@ -1,7 +1,7 @@
 /* PROJECT CSS*/
 
 body {
-	background-color: #dcf9e9;
+	background-color: #d9eefa;
 }
 p {
 	font-family: "Helvetica", sans-serif;
@@ -25,25 +25,25 @@ h3 {
 	text-decoration: uppercase;
 }
 header {
-	text-align: center;
 	margin-left: 50px;
-	margin-top: 25px;
+	margin-top: 30px;
 	width: 400px;
 	float: left;
 	background-color: #56edd0;
-	padding: 10px 20px 10px 20px;
+	padding: 10px;
 	border-radius: 15px;
+	clear: none;
+	text-align: center;
 }
 header img {
-	height: 300px;
-	width: 200px;
+	height: 200px;
+	width: 120px;
 	clear: both;
-	position: relative;
 }
 section {
 	float: left;
 	width: 700px;
-	margin-top: 25px;
+	margin-top: 30px;
 	margin-left: 15px;
 	background-color: #ed9ff8;
 	padding: 20px;
@@ -52,4 +52,31 @@ section {
 section div p {
 	color: #fff;
 	font-size: 10pt;
+}
+ul {
+	position: absolute;
+	top: 0;
+	left: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+li {
+	position: relative;
+    display: inline;
+    float: left;
+    width: 100%;
+}
+ul li a {
+	display: block;
+	background-color: #000;
+    height: 50px;
+	text-align: right;
+	color: #fff;
+    font-family: "Century Gothic", sans-serif;
+    font-size: 15pt;
+    text-decoration: none;
+    padding-top: 18px;
+    padding-right: 15px;
 }
