@@ -27,22 +27,54 @@
 	section {
 		margin: 150px;
 		height: 700px;
-		width: 1000px
+		width: 700px
 	}
 	article:nth-child(2) {
-		background-color: #994;
+		background-color: #D4D4D4;
+		height: 100px;
+		padding: 20px 50px;
+	}
+	article:nth-child(2) label,
+	article:nth-child(2) input,
+	article:nth-child(2) button {
+		float: left;
+		clear: both;
+		margin: 20px 0 0 80px;
+	}
+	article:nth-child(2) input{
+		clear: none;
+		margin-left: 10px;
 	}
 	article:nth-child(2) button {
 		clear: both;
+		margin-left: 200px;
+		background: #0D83DE;
+		color: #fff;
 	}
 	article:last-child {
-		background-color: #345;
-		clear: both;
+		background-color: #D4D4D4;
 	}
-	article:nth-child(3) {
-		background-color: #ff0;
-		border: 1px gray;
-		width: 50%;
+	article:nth-child(3),
+	article:nth-child(4) {
+		background-color: #FAFAFA;
+		border: 1px #D4D4D4 solid;
+		width: 308px;
+		height: 250px;
+		float: left;
+		clear: none;
+		padding: 20px;
+	}
+	article:nth-child(3) label,
+	article:nth-child(4) label,
+	article:nth-child(3) input,
+	article:nth-child(4) input{
+		margin-bottom: 10px;
+		float: left;
+	}
+	article:nth-child(3) input,
+	article:nth-child(4) input{
+		clear: right;
+		margin-right: 200px;
 	}
 	h2 {
 		font-size: 12pt;
@@ -68,7 +100,7 @@
 					<label for="email">Enter Your E-Mail Address to get started!</label>
 					<input  tabindex="2" type="text" title="Enter E-Mail Address" required/>
 
-					<button type="button">COnnect with Facebook!</button>
+					<button type="button">Connect with Facebook!</button>
 				</article>
 				<article>
 
@@ -85,14 +117,15 @@
 					<input  tabindex="2" type="text" title="Re-Type password" required/>
 				</article>
 				<article>
-					<label for="sex">Gender:</label>
-					<input type="radio" name="sex" id="sex" value="male" checked>Male</input>
-					<input type="radio" name="sex" value="female">Female</input>
+					<label for="sex">Gender:
+							<input type="radio" name="sex" value="male" checked>Male</input>
+							<input type="radio" name="sex" value="female">Female</input>
+					</label>
 
 					<label for="zip">Zip/Post Code:</label>
 					<input  tabindex="2" type="text" title="Choose a password" required/>
 
-					<label for="birthdate">Date of Birth:</label>
+					<label for="birthdate">Date of Birth:</label><br>
 					<input type="date" max="1900-01-01" min="2012-01-02" title="Enter Birthdate" required>
 				</article>
 				<article>

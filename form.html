@@ -23,6 +23,58 @@
 	<link rel="stylesheet" href="css/eggplant/jquery-ui-1.10.4.custom.css"> 
 	
 	-->
+	<style>
+	form {
+		background: #D5F4F5;
+		border: #1AA8AD 5px solid;
+		border-radius: 10px;
+		width: 450px;
+		height: 600px;
+		padding: 15px;
+	}
+	h1, p, label {
+		font-family: "Helvetica";
+		color: #0E595C;
+		size: 22pt;
+	}
+	p, label {
+		font-size: 10pt;
+		color: #000;
+		font-style: oblique;
+	}
+	label,
+	span {
+		font-style: normal;
+	}
+	label,
+	input,
+	span,
+	select {
+		float: left;
+		clear: none;
+	}
+	input,
+	span,
+	textarea,
+	select {
+		clear: both;
+		width: 400px;
+		margin: 5px 0 20px 0;
+	}
+	textarea {
+		height: 100px;
+	}
+	input:hover,
+	textarea:hover {
+		background: #B6E1E3;
+	}
+	button {
+		float: right;
+		background: #1AA8AD;
+		color: #fff;
+		border-radius: 5px;
+	}
+	</style>
 	
 
 	
@@ -44,13 +96,20 @@
 					<input  tabindex="2" type="tel" title="Enter Telephone Number" required/>
 
 					<label for="inquiry">Inquiry*</label>
-					<input  tabindex="2" type="dropdown"  required/>
+						<select>
+  							<option>Question</option>
+  							<option>Comment</option>
+  							<option>Complaint</option>
+						</select>
 
-					<textarea rows="4" cols="35" name="Message" form="usrform">Type question or comment here!</textarea>
 
-					<p>* indicates a required field</p>
+					<label>
+						<span>Enter your Question or Comment</span>
+						<textarea id="feedback" name="feedback"></textarea>
+						<p>* indicates a required field</p>
 
-					<button type="button" alt="signup">Submit!</button>
+						<button type="button" alt="signup">Submit!</button>
+					</label>
 		</form>
 	</section>
 

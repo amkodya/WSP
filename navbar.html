@@ -23,6 +23,91 @@
 	<link rel="stylesheet" href="css/eggplant/jquery-ui-1.10.4.custom.css"> 
 	
 	-->
+	<style>
+	body {
+		background-color: #000;
+	}
+	nav {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 70px;
+		background: #7db9e8; /* Old browsers */
+		background: -moz-linear-gradient(top,  #7db9e8 0%, #1e5799 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7db9e8), color-stop(100%,#1e5799)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #7db9e8 0%,#1e5799 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #7db9e8 0%,#1e5799 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #7db9e8 0%,#1e5799 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #7db9e8 0%,#1e5799 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#1e5799',GradientType=0 ); /* IE6-9 */
+	}
+
+	ul {
+    	list-style-type: none;
+    	margin: 0;
+    	padding: 0;
+    	overflow: hidden;
+	}
+	li {
+    	float: left;
+    	display: inline;
+	}
+	nav a,
+	ul li ul li {
+    	display: block;
+    	width: 200px;
+    	height: 70px;
+    	float: left;
+		clear: none;
+		color: #fff;
+		font-family: "Calibri";
+		text-decoration: none;
+
+	}
+	nav li a:hover {
+		background: #1e5799;
+	}
+	ul li ul {
+  		padding: 0;
+  		position: absolute;
+  		top: 70px;
+  		left: 200px;
+  		width: 150px;
+  		-webkit-box-shadow: none;
+  		-moz-box-shadow: none;
+  		box-shadow: none;
+  		display: none;
+  		opacity: 0;
+  		visibility: hidden;
+ 		-webkit-transiton: opacity 0.2s;
+  		-moz-transition: opacity 0.2s;
+  		-ms-transition: opacity 0.2s;
+  		-o-transition: opacity 0.2s;
+  		-transition: opacity 0.2s;
+  		border-radius: 5px;
+	}
+	ul li ul li { 
+  		background: #1e5799; 
+  		display: block; 
+  		color: #fff;
+  		text-shadow: 0 -1px 0 #000;
+	}
+	ul li ul li:hover { 
+		background: #7db9e8; 
+	}
+	ul li:hover ul {
+  		display: block;
+  		opacity: 1;
+  		visibility: visible;
+	}
+	img {
+		width: 20px;
+		height: 20px;
+		margin: 20px;
+	}
+
+	</style>
 	
 
 	
@@ -32,16 +117,17 @@
 
 	<header>
 		<nav>
-			<a href=""><img src="" alt="blue home icon">home</a>
-			<a href=""><img src="" alt="blue picture icon">work
+			<ul>
+				<li><a href=""><img src="" alt="blue home icon">home</a></li>
+				<li><a href=""><img src="" alt="blue picture icon">work</a>
 					<ul>
-  						<li><a href="">link1</a></li>
-  						<li><a href="">link2</a></li>
-  						<li><a href="">link3</a></li>
-					</ul>
-			</a>
-			<a href=""><img src="" alt="profile of human icon"></a>
-			<a href=""><img src="" alt="envelope icon"></a>
+      					<li>link1</li>
+      					<li>link2</li>
+      					<li>link3</li>
+    				</ul>
+				</li>
+				<li><a href=""><img src="" alt="profile of human icon">about</a></li>
+				<li><a href=""><img src="" alt="envelope icon">contact</a></li>
 		</nav>
 	</header>
 
