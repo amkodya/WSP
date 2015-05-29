@@ -1,0 +1,128 @@
+<!-- Project: Building a Library -->
+<!-- LOGIN/REGISTRATION -->
+<!-- Ashley M. Kodya - WDSP - May 2015 -->
+
+<!doctype html>  
+
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Project: Building a Library - LOGIN/REGISTRATION</title>
+	<meta name="LOGIN/REGISTRATION" content="">
+	<meta name="Ashley M. Kodya" content="">
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- 
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/eggplant/jquery-ui-1.10.4.custom.css"> 
+	
+	-->
+	<style>
+	form {
+		background: #D5F4F5;
+		border: #1AA8AD 5px solid;
+		border-radius: 10px;
+		width: 450px;
+		height: 600px;
+		padding: 15px;
+	}
+	h1, p, label {
+		font-family: "Helvetica";
+		color: #0E595C;
+		size: 22pt;
+	}
+	p, label {
+		font-size: 10pt;
+		color: #000;
+		font-style: oblique;
+	}
+	label {
+		font-style: normal;
+	}
+	label,
+	input,
+	select {
+		float: left;
+		clear: none;
+	}
+	input,
+	textarea,
+	select {
+		clear: both;
+		width: 400px;
+		margin: 5px 0 20px 0;
+	}
+	textarea {
+		height: 100px;
+	}
+	input:hover,
+	textarea:hover {
+		background: #B6E1E3;
+	}
+	button {
+		float: right;
+		background: #1AA8AD;
+		color: #fff;
+		border-radius: 5px;
+	}
+	</style>
+	
+
+	
+</head>
+
+<body>
+
+	<section>
+		<form>
+			<h1>Get In Touch!</h1>
+				<p>fill out the form to contact us!</p>
+					<label for="name">Name:*</label>
+					<input  tabindex="2" type="text" title="Enter Name" required/>
+
+					<label for="email">E-Mail Address*</label>
+					<input  tabindex="2" type="text" title="Enter E-Mail Address" required/>
+
+					<label for="phone">Telephone:*</label>
+					<input  tabindex="2" type="tel" title="Enter Telephone Number" required/>
+
+					<label for="inquiry">Inquiry*</label>
+						<select>
+  							<option>Question</option>
+  							<option>Comment</option>
+  							<option>Complaint</option>
+						</select>
+
+
+					<label>
+						<span>Enter your Question or Comment</span>
+						<textarea id="feedback" name="feedback"></textarea>
+						<p>* indicates a required field</p>
+
+						<button type="button" alt="signup">Submit!</button>
+					</label>
+		</form>
+	</section>
+
+
+	<a href="index.html" alt="back to home page">Return to Main Page</a>
+
+
+
+
+	<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.10.4.custom.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.10.4.custom.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+
+
+  
+</body>
+</html>
