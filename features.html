@@ -27,23 +27,25 @@
 	section {
 		float: left;
 		clear: both;
+		padding: 50px 80px;
 	}
 
-	article {
-		width: 200px;
-		height: 500px;
+	article {				/* each article blurb */
+		width: 150px;
+		height: 320px;
 		clear: none;
 		float: left;
 		margin-right: 30px;
 	}
-	section:first-child {
-		margin-left: 100px;
+	article:nth-child(6) { /* starts 2nd row */
+		float: left;
+		clear: left;
 	}
 	h2 {
 		color: #3C3;
 		font-family: "Calibri";
 		font-weight: bold;
-		padding-bottom: 100px;
+		padding-bottom: 60px;
 	}
 	h3,
 	article p {
@@ -52,6 +54,10 @@
 	}
 	article p {
 		font-size: 12px;
+	}
+	img {
+		width: 150px;
+		height: 150px;
 	}
 	
 	</style>
@@ -64,41 +70,38 @@
 	
 
 	<section>
-		<h2>Features</h2>
+		<h2>Learn</h2>
 			<article>
-				<img src="" alt="carrot glyph contained in green square box">
+				<img src="images/carrot.png" alt="carrot glyph contained in green square box">
 				<h3>Food</h3>
 				<p>Local, sustainable, organic farms and gardens ensure abudant, nutritous food production for all</p>
 			</article>
 			<article>
-				<img src="" alt="waterdrop glyph in blue square box">
+				<img src="images/water.png" alt="waterdrop glyph in blue square box">
 				<h3>Water</h3>
 				<p>Healthy watersheds + healthy ecosystems. Harvest and conserve to make our water go further</p>
 			</article>
 			<article>
-				<img src="" alt="recycling icon in red square box">
+				<img src="images/waste.png" alt="recycling icon in red square box">
 				<h3>Waste</h3>
 				<p>Reduce, resue, recycle and rethink how we treat waste in our homes and communties</p>
 			</article>
 			<article>
-				<img src="" alt="lightbulb icon in yellow square box">
+				<img src="images/bulb.png" alt="lightbulb icon in yellow square box">
 				<h3>Energy</h3>
 				<p>Engage renewable energy sources and conservation at macro(grid) and micro(home) levels</p>
 			</article>
 			<article>
-				<img src="" alt="tent icon in orange square box">
+				<img src="images/tent.png" alt="tent icon in orange square box">
 				<h3>Shelter</h3>
 				<p>Transform your shelther into a low-impact, less expensive and healthier place to dwell.</p>
 			</article>
 			<article>
-				<img src="" alt="blue narrow arrow pointing right in grey square box">
+				<img src="images/viewall.png" alt="blue narrow arrow pointing right in grey square box">
 				<h3>View all</h3>
 				<p>All five core areas work together to bring about positive ecological transformation</p>
 			</article>
 	</section>
-
-
-	<a href="index.html" alt="back to home page">Return to Main Page</a>
 
 
 

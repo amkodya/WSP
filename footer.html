@@ -27,31 +27,103 @@
 	<style>
 	body {
 		background-color: #373740;
-	}
-	footer {
-		float: left;
-		clear: both;
-		margin: 500px 300px 300px 300px;
+		font-size: 8pt;
+		font-family: "Arial";
+		text-align: left;
 	}
 	article {
 		float: left;
 		clear: none;
-		height: 100px;
-		width: 70px;
 		margin: 10px;
 	}
-	h6,
-	article a {
-		color: #F2F2F2;
-		font-size: 8pt;
-		font-family: "Arial";
+	/*  ------------------- links columns ---------------------- */
+	article ul {
+		display: inline-block;
 	}
-	article a {
+	h1,
+	article ul li a {
+		color: #F2F2F2;
+	}
+	h1 {
+		font-size: 10px;
+	}
+	article ul li {
+		list-style-type: none;
+		clear: both;
+	}
+	article ul li a {
 		color: #B8B8B8;
 		float: left;
 		clear: right;
 		text-decoration: none;
 	}
+	article:first-child ul { /*width of the links columns */
+		width: 120px;
+	}
+	/* ------------ subscribe now section -----------------------*/
+	article ul:nth-child(6) { /* subscribe label and button */
+		position: relative;
+		top: 25px;
+		width: 300px;
+	}
+	article ul:nth-child(6) input { /*subscribe input */
+		position: relative;
+		top: 40px;
+	}
+	/*  ------------------- bottom ---------------------- */
+	article:last-child {
+		clear: both;
+		width: 100%;
+		height: 80px;
+		margin: 0;
+		background-color: #000;
+		color: #8D8E8F;
+		padding-top: 30px;
+	}
+	article:last-child ul {  /* uls of the links at very bottom */ 
+		float: left;
+		clear: none;
+	}
+	article:last-child ul li { /* li text within links */
+		float: left;
+		clear: none;
+		margin-right: 50px;
+	}
+	article:last-child ul li:nth-child(4){  /*last of the links at bottom */
+		margin: 0 60px;
+		clear: right;
+		float: right;
+	}
+	article:last-child ul li ul li {
+		margin: 0;
+	}
+	article:last-child ul li a {  /* links styling */
+		float: right;
+		clear: none;
+		margin: 0 10px;
+	}
+	article:last-child ul li ul li ul { /*images icons */
+		float: right;
+		clear: both;
+		margin-top: 30px;
+	}
+	article:last-child ul li ul li ul li {
+		margin: 0;
+		padding: 0;
+	}
+	/* input styling */
+	input {
+		background-color: #373740;
+		color: #fff;
+		box-shadow: 0;
+		border:1px solid #000;
+	}
+	input:last-of-type {
+		background-color: #D9DADB;
+		color: #373740;
+		border-radius: 5px;
+	}
+
 	</style>
 	
 
@@ -62,48 +134,79 @@
 
 	<footer>
 		<article>
-			<h6>Title 1</h6>
-				<a href="" alt""=>link text</a>
-				<a href="" alt""=>link text</a>
-				<a href="" alt""=>link text</a>
-				<a href="" alt""=>link text</a>
-				<a href="" alt""=>link text</a>
+			<ul>
+				<li><h1>Title 1</h1>
+				<li><a href="" alt""=>link text</a></li>
+				<li><a href="" alt""=>link text</a></li>
+				<li><a href="" alt""=>link text</a></li>
+				<li><a href="" alt""=>link text</a></li>
+				<li><a href="" alt""=>link text</a></li>
+			</ul>
+			<ul>
+				<li><h1>Title 2</h1></li>
+				<li><a href="" alt""=>link text</a></li>
+				<li><a href="" alt""=>link text</a></li>
+				<li><a href="" alt""=>link text</a></li>
+				<li><a href="" alt""=>link text</a></li>
+				<li><a href="" alt""=>link text</a></li>
+			</ul>
+			<ul>
+				<li><h1>Title 3</h1></li>
+				<li><a href="" alt""=>link text</a></li>
+				<li><a href="" alt""=>link text</a></li>
+				<li><a href="" alt""=>link text</a></li>
+				<li><a href="" alt""=>link text</a></li>
+				<li><a href="" alt""=>link text</a></li>
+			</ul>
+			<ul>
+				<li><h1>Title 4</h1></li>
+				<li><a href="" alt""=>link text</a></li>
+				<li><a href="" alt""=>link text</a></li>
+				<li><a href="" alt""=>link text</a></li>
+				<li><a href="" alt""=>link text</a></li>
+				<li><a href="" alt""=>link text</a></li>
+			</ul>
+			<ul>
+				<li><h1>Title 5</h1></li>
+				<li><a href="" alt""=>link text</a></li>
+				<li><a href="" alt""=>link text</a></li>
+				<li><a href="" alt""=>link text</a></li>
+				<li><a href="" alt""=>link text</a></li>
+				<li><a href="" alt""=>link text</a></li>
+			</ul>
+			<ul>
+				<li><h1>Subscribe Now to get the scoop</h1></li>
+				<li><input  tabindex="2" type="text" title="" required/></input>
+					<input type="submit" value="subscribe"></input><li>
+			</ul>
 		</article>
 		<article>
-			<h6>Title 2</h6>
-				<a href="" alt""=>link text</a>
-				<a href="" alt""=>link text</a>
-				<a href="" alt""=>link text</a>
-				<a href="" alt""=>link text</a>
-				<a href="" alt""=>link text</a>
+			<ul>
+				<li>
+					<ul>
+						<li>Copyright 2012</li>
+						<li><a href="" alt="">Stitch Labs</a></li>
+						<li>All Rights Reserved</li>
+					</ul>
+				</li>
+				<li>Email:   <a mailto:"info@stitchlabs.com">info@stitchlabs.com</a></li>
+				<li>Tel:   <a href="" alt"">+1 415.322.0633</a></li>
+				<li>
+					<ul>
+						<li>Hosted by</li>
+						<li><a href="" alt"">Backspace</a>
+							<ul>
+								<li><img src="images/fb.gif" alt="tiny facebook icon"></li>
+								<li><img src="images/insta.png" alt="tiny instagram icon"></li>
+								<li><img src="images/twitt.png" alt="tiny twitter"></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
 		</article>
-		<article>
-			<h6>Title 3</h6>
-				<a href="" alt""=>link text</a>
-				<a href="" alt""=>link text</a>
-				<a href="" alt""=>link text</a>
-				<a href="" alt""=>link text</a>
-				<a href="" alt""=>link text</a>
-		</article>
-		<article>
-			<h6>Title 4</h6>
-				<a href="" alt""=>link text</a>
-				<a href="" alt""=>link text</a>
-				<a href="" alt""=>link text</a>
-				<a href="" alt""=>link text</a>
-				<a href="" alt""=>link text</a>
-		</article>
-		<article>
-			<h6>Title 5</h6>
-				<a href="" alt""=>link text</a>
-				<a href="" alt""=>link text</a>
-				<a href="" alt""=>link text</a>
-				<a href="" alt""=>link text</a>
-				<a href="" alt""=>link text</a>
-		</article>	
 	</footer>
 
-	<a href="index.html" alt="back to home page">Return to Main Page</a>
 
 
 

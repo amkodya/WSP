@@ -1,7 +1,7 @@
 /* PROJECT CSS*/
 
 body {
-	background-color: #d9eefa;
+	background-color: #CBD898;
 }
 p {
 	font-family: "Helvetica", sans-serif;
@@ -13,15 +13,15 @@ h2,
 h3 {
 	font-size: 30pt;
 	font-family: "Calibri";
-	color: #31577a;
+	color: #CED7D9;
 }
-h2 {
+h2,
+h3 {
 	font-size: 22pt;
-	color: #501a69;
+	color: #385158;
 }
 h3 {
 	font-size: 16pt;
-	color: #732999;
 	text-decoration: uppercase;
 }
 header {
@@ -29,7 +29,7 @@ header {
 	margin-top: 30px;
 	width: 400px;
 	float: left;
-	background-color: #56edd0;
+	background-color: #5981A8;
 	padding: 10px;
 	border-radius: 15px;
 	clear: none;
@@ -45,7 +45,7 @@ section {
 	width: 700px;
 	margin-top: 30px;
 	margin-left: 15px;
-	background-color: #ed9ff8;
+	background-color: #A47B70;
 	padding: 20px;
 	border-radius: 15px;
 }
@@ -70,7 +70,7 @@ li {
 }
 ul li a {
 	display: block;
-	background-color: #000;
+	background-color: #385158;
     height: 50px;
 	text-align: right;
 	color: #fff;

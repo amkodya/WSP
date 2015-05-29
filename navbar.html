@@ -29,10 +29,12 @@
 	}
 	nav {
 		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
+		top: 15px;
+		left: 10px;
+		width: 68%;
 		height: 70px;
+		border-radius: 10px;
+
 		background: #7db9e8; /* Old browsers */
 		background: -moz-linear-gradient(top,  #7db9e8 0%, #1e5799 100%); /* FF3.6+ */
 		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7db9e8), color-stop(100%,#1e5799)); /* Chrome,Safari4+ */
@@ -50,11 +52,17 @@
     	overflow: hidden;
 	}
 	li {
+		margin: -5px 20px 20px 20px;
     	float: left;
     	display: inline;
+    	border-right: 1px solid #1e5799;
+	}
+	li:last-child {
+		border-right: 0;
 	}
 	nav a,
 	ul li ul li {
+		margin: 0;
     	display: block;
     	width: 200px;
     	height: 70px;
@@ -62,8 +70,8 @@
 		clear: none;
 		color: #fff;
 		font-family: "Calibri";
+		font-size: 30px;
 		text-decoration: none;
-
 	}
 	nav li a:hover {
 		background: #1e5799;
@@ -73,7 +81,8 @@
   		position: absolute;
   		top: 70px;
   		left: 200px;
-  		width: 150px;
+  		width: 550px;
+  		height: 700px;
   		-webkit-box-shadow: none;
   		-moz-box-shadow: none;
   		box-shadow: none;
@@ -92,9 +101,14 @@
   		display: block; 
   		color: #fff;
   		text-shadow: 0 -1px 0 #000;
+  		    	border-right: 1px solid #000;
+	}
+	ul li ul li a{
+		font-size: 20px;
+		padding: 20px;
 	}
 	ul li ul li:hover { 
-		background: #7db9e8; 
+		background: #1e5799; 
 	}
 	ul li:hover ul {
   		display: block;
@@ -102,9 +116,10 @@
   		visibility: visible;
 	}
 	img {
-		width: 20px;
-		height: 20px;
-		margin: 20px;
+		width: 50px;
+		height: 50px;
+		position: relative;
+		top: 15px;
 	}
 
 	</style>
@@ -118,16 +133,19 @@
 	<header>
 		<nav>
 			<ul>
-				<li><a href=""><img src="" alt="blue home icon">home</a></li>
-				<li><a href=""><img src="" alt="blue picture icon">work</a>
+				<li><a href=""><img src="images/navbarhome.png" alt="blue home icon">home</a></li>
+				<li><a href=""><img src="images/navbarwork.png" alt="blue picture icon">work</a>
 					<ul>
-      					<li>link1</li>
-      					<li>link2</li>
-      					<li>link3</li>
+      					<li><a href="">link1</a></li>
+      					<li><a href="">link2</a></li>
+      					<li><a href="">link3</a></li>
+    					<li><a href="">link1</a></li>
+      					<li><a href="">link2</a></li>
+      					<li><a href="">link3</a></li>
     				</ul>
 				</li>
-				<li><a href=""><img src="" alt="profile of human icon">about</a></li>
-				<li><a href=""><img src="" alt="envelope icon">contact</a></li>
+				<li><a href=""><img src="images/navbarperson.png" alt="profile of human icon">about</a></li>
+				<li><a href=""><img src="images/navbarcontact.png" alt="envelope icon">contact</a></li>
 		</nav>
 	</header>
 

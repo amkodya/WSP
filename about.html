@@ -30,44 +30,76 @@
 	}
 
 	section {
-		margin: 80px 0 80px 80px;
-		padding-bottom: 50px;
+		margin: 50px;
+		padding-top: 45px;
 		border-top: 3px #000 solid;
-		border-bottom: 3px #000 solid;
-		width: 93%;
+		width: 1100px;
 		float: left;
 		clear: both;
-	}
-
-	img {
-		width: 590px;
-		height: 500px;
 	}
 	article {
 		float: left;
 		clear: none;
-		padding-right: 30px;
+		margin-right: 32px;
+		border-bottom: 3px #000 solid;
+	}
+	article:last-child {
+		margin: 0;
+	}
+	img {
+		width: 534px; 
+		height: 398px;
 	}
 	h1,
 	h2,
+	h3,
+	h4,
 	a  {
-		color: #ddd;
+		color: #000;
 		font-family: "Helvetica";
-		font-size: 14px;
+		font-size: 34px;
+		margin: 0;
+		padding: 0;
+		text-transform: uppercase;
 	}
 	h2 {
-		font-size: 34px;
-		color: #000;
+		font-size: 14px;
+		color: #ddd;
+		margin-bottom: 20px;
 	}
 	h3,
+	h4,
 	a {
-		color: #D13;
-		font-family: "Brush Script MT";
+		font-size: 13px;
+		text-transform: none;
 	}
-	section article a {
+	h3{
+		margin-top: 10px;
+	}
+	h4 {
+		margin-bottom: 30px;
+
+	}
+	h4,
+	a {
+		color: #ec5456;
+		font-family: "adobe-caslon-pro-1", "adobe-caslon-pro-2", serif;
+		font-style: italic;
+		font-size: 11px;
+	}
+	ul {
+		margin: 0;
+		padding: 10px 0 45px 0;
+		float: left;
+	}
+	li {
+		list-style-type: none;
+		clear: none;
+		display: inline;
+	}
+	ul li a {
 		color: #000;
-		font-weight: oblique;
-		font-size: 12px;
+		text-decoration: none;
 	}
 
 	</style>
@@ -79,25 +111,31 @@
 <body>
 
 	<section>
-		<h1>About</h1>
-		<h2>Creative Force</h2>
-		<h3>Meet the Founders</h3>
+		<h2>About</h2>
+		<h1>Creative Force</h1>
+		<h4>Meet the Founders of FO</h4>
 			<article>
-				<img src="" alt="portrait of jorgen hassler of creative force">
-				<h5>Jorgen Hassler, BA</h5>
-				<h3>Creative Director and Founder</h3>
-				<a href="twitter.com/jorgen" alt="twitter">Twitter</a>/<a href="linkedin.com/jorgen" alt="linkedin">LinkedIn</a>/<a href="dribble.com/jorgen" alt="dribble">Dribble</a><br>
+				<img src="images/juergen.jpg" alt="portrait of jorgen hassler of creative force">
+				<h3>Jorgen Hassler, BA</h3>
+				<h4>Creative Director and Founder</h4>
+				<ul>
+					<li><a href="twitter.com/jorgen" alt="twitter">Twitter</a> / </li>
+					<li><a href="linkedin.com/jorgen" alt="linkedin">LinkedIn</a> / </li>
+					<li><a href="dribble.com/jorgen" alt="dribble">Dribble</a></li>
+				</ul>
 			</article>
 			<article>
-				<img src="" alt="portrait of melanie daveid  of creative force">
-				<h5>Melanie Daveid, BA</h5>
-				<h3>Art Director and Founder</h3>
-				<a href="twitter.com/melanie" alt="twitter">Twitter</a>/<a href="linkedin.com/melanie" alt="linkedin">LinkedIn</a>/<a href="dribble.com/melanie" alt="dribble">Dribble</a><br>
+				<img src="images/melanie.jpg" alt="portrait of melanie daveid  of creative force">
+				<h3>Melanie Daveid, BA</h3>
+				<h4>Art Director and Founder</h4>
+				<ul>
+					<li><a href="twitter.com/melanie" alt="twitter">Twitter</a> / </li>
+					<li><a href="linkedin.com/melanie" alt="linkedin">LinkedIn</a> / </li>
+					<li><a href="dribble.com/melanie" alt="dribble">Dribble</a><br></li>
+				</ul>
 			</article>			
 	</section>
 
-
-	<a href="index.html" alt="back to home page">Return to Main Page</a>
 
 
 
